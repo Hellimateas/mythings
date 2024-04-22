@@ -18,7 +18,7 @@ public class StudyFlixApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		var comsumo = new ConsumoApi();
-		var json = ConsumoApi.obterDados("https://www.omdbapi.com/?i=tt3896198&apikey=602b6f41");
+		var json = ConsumoApi.obterDados("https://www.omdbapi.com/?t=friends&apikey=602b6f41");
 		System.out.println(json);
 
 		ConverteDados conversor = new ConverteDados();
